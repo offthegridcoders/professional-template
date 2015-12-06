@@ -1,0 +1,119 @@
+.form-default {
+  width: 100%;
+  position: relative;
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"] {
+    height: @default-input-height;
+    background-color: @defaultInputBGColor;
+    border: solid 1px @default-input-border-color;
+    padding-left: 5px;
+    margin-top: 3px;
+    width: 100%;
+    font-size: @default-input-font-size;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .placeholder-style {
+    color: @default-input-border-color;
+    font-size: @default-input-font-size;
+    text-transform: uppercase;
+    line-height: (@default-input-height /2);
+  }
+
+  input::-webkit-input-placeholder {
+    .placeholder-style;
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+    .placeholder-style;
+  }
+
+  input::-moz-placeholder {  /* Firefox 19+ */
+    .placeholder-style;
+  }
+
+  input:-ms-input-placeholder {
+    .placeholder-style;
+  }
+
+  label {
+    color: @labelDefaultColor;
+    font-weight: 600;
+    padding-top: 10px;
+    display: block;
+  }
+
+  label.animate-label {
+    position: relative;
+    padding: 0;
+
+    .fa-times {
+      position: absolute;
+      right: 10px;
+      bottom: 12px;
+      color: #bbb;
+      cursor: pointer;
+      z-index: 3;
+
+      &:hover {
+        color: #444;
+      }
+    }
+
+    input {
+      position: relative;
+      z-index: 1;
+      margin: 5px 0;
+      margin-bottom: 10px;
+    }
+
+    span {
+      padding-left: 8px;
+      position: relative;
+      top: 31px;
+    }
+  }
+
+  label.lbl-empty {
+
+    .fa-times {
+      opacity: 0;
+    }
+
+    input {
+      background-color: transparent;
+      margin: 0;
+    }
+
+    span {
+      background-color: #fff;
+      transition: all .3s ease;
+      .placeholder-style;
+    }
+  }
+
+  label.lbl-full {
+    padding-top: 10px;
+
+    .fa-times {
+      opacity: 1;
+    }
+
+    input {
+      background-color: @defaultInputBGColor;
+      margin-bottom: 0;
+    }
+
+    span {
+      top: 0;
+      padding-left: 0;
+      color: @labelDefaultColor;
+    }
+  }
+}
