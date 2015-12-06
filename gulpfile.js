@@ -34,8 +34,8 @@
       css: 'src/css/'
     },
     dist: {
-      js: './dist/js',
-      assets: './dist/assets',
+      js: './dist/js/',
+      assets: './dist/assets/',
       css: './dist/css/',
       html: './dist/'
     }
