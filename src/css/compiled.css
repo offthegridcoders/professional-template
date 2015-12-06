@@ -4314,7 +4314,7 @@ html {
 article {
   margin: 0 auto;
   max-width: 1000px;
-  border: solid 1px #f4f1f1;
+  border: solid 1px transparent;
   padding: 30px;
 }
 
