@@ -3401,7 +3401,7 @@ section article footer {
   top: 4px;
   left: 4px;
   bottom: 4px;
-  width: calc(28px);
+  width: calc(27px);
   background-color: #ddd;
   border-radius: 52px;
   transition: margin 0.4s, background 0.4s;

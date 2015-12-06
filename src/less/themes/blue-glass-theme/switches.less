@@ -88,7 +88,7 @@
   // FLAT SWITCH
     input.bg-round-flat {
       & + label {
-        padding: 2px;
+        padding: @flatSwitchPadding;
         width: calc(@flatSwitchHeight * 2);
         height: @flatSwitchHeight;
         background-color: @flatSwitchOffColor;
@@ -115,10 +115,10 @@
 
         // ON
         &::after {
-          top: 4px;
-          left: 4px;
-          bottom: 4px;
-          width: calc(@flatSwitchHeight - 7px);
+          top: @flatSwitchBtnPadding;
+          left: @flatSwitchBtnPadding;
+          bottom: @flatSwitchBtnPadding;
+          width: calc(@flatSwitchHeight - (@flatSwitchBtnPadding * 2));
           background-color: @flatSwitchOffColor;
           border-radius: 52px;
           transition: margin 0.4s, background 0.4s;
