@@ -10,10 +10,15 @@ function buildImageLightBox(image) {
   imageHeight = image.height;
   imageWidth = image.width;
 
-  if ((imageWidth > browserWidth) || (imageHeight > browserHeight)) {
-    if (imageWidth > browserWidth) {
+  console.log(imageHeight);
+  console.log(imageWidth);
+  console.log(browserHeight);
+  console.log(browserWidth);
+
+  if ((imageWidth > browserWidth) && (imageHeight > browserHeight)) {
+    if (imageWidth > imageHeight) { // landscape
       img.css('width', '80%');
-    } else {
+    } else { // portrait
       img.css('height', '80%');
     }
   }
