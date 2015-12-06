@@ -1,0 +1,48 @@
+.main-footer {
+  background-color: @main-footer-bgcolor;
+  padding: 50px 100px;
+  height: 400px;
+
+  .main-links {
+    margin: 0 auto;
+    max-width: 800px;
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+
+    .link-hover-active(@color) {
+      &::after {
+        content: '';
+        display: block;
+        width: 26px;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -13px;
+        background: @color;
+        background-color: @color;
+      }
+    }
+
+    a {
+      margin: 20px 30px;
+      display: block;
+      color: @main-footer-link-color;
+      text-decoration: none;
+      position: relative;
+      text-transform: uppercase;
+      
+      &:hover {
+      .link-hover-active(@main-footer-link-color);
+      }
+    }
+
+    .active {
+      .link-hover-active(@main-footer-link-color);
+    }
+  }
+}

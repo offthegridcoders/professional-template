@@ -3743,8 +3743,12 @@ ul {
   // Main Header Settings      //
   // ------------------------- */
 
-/* -------------------------- //
-  // Section / Article Settings //
+/* ------------------------- //
+  // Main Footer Settings      //
+  // ------------------------- */
+
+/* ------------------------- //
+  // Article Settings          //
   // ------------------------- */
 
 * {
@@ -4035,6 +4039,58 @@ html {
   color: #000;
 }
 
+.main-footer {
+  background-color: #3da0e3;
+  padding: 50px 100px;
+  height: 400px;
+}
+
+.main-footer .main-links {
+  margin: 0 auto;
+  max-width: 800px;
+  list-style: none;
+  text-align: center;
+}
+
+.main-footer .main-links li {
+  display: inline-block;
+}
+
+.main-footer .main-links a {
+  margin: 20px 30px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.main-footer .main-links a:hover::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -13px;
+  background: #fff;
+  background-color: #fff;
+}
+
+.main-footer .main-links .active::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -13px;
+  background: #fff;
+  background-color: #fff;
+}
+
 .main-header {
   width: 100%;
   height: 100%;
@@ -4080,6 +4136,10 @@ html {
   color: #fff;
 }
 
+.simple-copy-article {
+  margin: 50px auto;
+}
+
 article {
   margin: 0 auto;
   max-width: 1000px;
@@ -4090,5 +4150,4 @@ article {
 section {
   margin: 0;
   width: 100%;
-  padding: 50px;
 }
