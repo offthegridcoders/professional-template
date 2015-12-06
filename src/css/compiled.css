@@ -4160,6 +4160,7 @@ html {
   padding: 20px 10px;
   background-color: #3da0e3;
   border-bottom: solid 1px #1e88cf;
+  transition: all .4s ease;
 }
 
 .main-nav-first .nav-logo-img {
@@ -4231,6 +4232,7 @@ html {
   padding: 10px 10px;
   background-color: #fff;
   border-bottom: solid 1px #e6e6e6;
+  transition: all .4s ease;
 }
 
 .main-nav-second .nav-logo-img {
@@ -4567,6 +4569,76 @@ html {
   display: block;
 }
 
+.image-content-hover {
+  position: relative;
+}
+
+.image-content-hover img {
+  width: 100%;
+  position: relative;
+}
+
+.image-content-hover .title {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 22px;
+  width: 100%;
+  font-weight: 400;
+  margin: 50px 0 0;
+  display: none;
+}
+
+.image-content-hover .options-list {
+  display: none;
+  margin: 20px auto 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.image-content-hover .options-list li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.image-content-hover .options-list a i {
+  color: #ccc;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 56px;
+  line-height: 30px;
+  opacity: .75;
+}
+
+.image-content-hover .options-list a:hover i {
+  opacity: 1;
+  color: #444;
+}
+
+.image-content-hover .overlay {
+  z-index: 2;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: transparent;
+  transition: all .4s ease;
+}
+
+.image-content-hover:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.image-content-hover:hover .title,
+.image-content-hover:hover .options-list {
+  display: block;
+}
+
 article {
   margin: 0 auto;
   max-width: 1000px;
@@ -4576,6 +4648,20 @@ article {
 
 .message-box {
   margin: 10px 0;
+}
+
+.image-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  font-size: 0;
+}
+
+.image-list li {
+  width: 33%;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 section {
