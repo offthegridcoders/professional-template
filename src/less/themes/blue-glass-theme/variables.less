@@ -12,6 +12,7 @@
     @primary-font: 'Source Sans Pro', sans-serif;
     @main-color: #3da0e3;
     @secondary-color: #000;
+    @link-color: #56b1ee;
     @paragraph-line-height: 2;
 
   /* ------------------------- //
@@ -21,9 +22,9 @@
     @main-nav-link-color: #fff;
     @main-logo-color: #fff;
     @second-nav-bgcolor: #fff;
-    @second-main-nav-link-color: #000;
-    @second-main-logo-color: #000;
-    @second-main-logo-fa-color: #000;
+    @second-main-nav-link-color: #444;
+    @second-main-logo-color: #444;
+    @second-main-logo-fa-color: #444;
 
   /* ------------------------- //
   // Main Header Settings      //
@@ -48,7 +49,6 @@
 
     @article-max-width: 1000px;
     @article-padding: 30px;
-    //@article-border-color: #f4f1f1;
     @article-border-color: transparent;
     @article-footer-font-size: 14px;
     @article-footer-text-color: #898989;
@@ -62,3 +62,42 @@
     @error-box-color: #d94343;
     @warning-box-color: #f09712;
     @alert-box-color: #f09712;
+
+  /* ------------------------- //
+  // Switch Settings           //
+  // ------------------------- */
+
+    // Round Switch
+      @roundSwitchHeight: 70px;
+      @roundSwitchRadius: 60px;
+      @roundSwitchOffBGcolor: #f1f1f1;
+      @roundSwitchBorderColor: #dddddd;
+      @roundSwitchOnBGColor: @main-color;
+      @roundSwitchToggleBGColor: #fff;
+      @roundSwitchDisabledBGColor: #fefefe;
+
+    // Flat Switch
+      @flatSwitchHeight: 35px;
+      @flatSwitchOnColor: @main-color;
+      @flatSwitchOffColor: #ddd;
+      @flatSwitchDisabledBGColor: #eee;
+      @flatSwitchPadding: 2px;
+
+    // Yes & No Switch
+      @yesNoSwitchHeight: 35px;
+      @yesNoTextColor: #fff;
+      @yesNoFontSize: 14px;
+      @yesNoOffBGColor: #dddddd;
+      @yesNoOnBGColor: @main-color;
+      @yesNoTransition: rotateX(180deg);
+      @yesNoTransitionOff: rotateX(0);
+
+    // Square Switch
+      @squareSwitchSize: 28px;
+      @squareSwitchBorderColor: #ddd;
+      @squareSwitchBorderSize: 3px;
+      @squareSwitchOnBorderColor: @main-color;
+      @squareSwitchOffBorderColor: #ddd;
+      @squareSwitchOffBGColor: #fefefe;
+      @squareSwitchOnBGColor: @main-color;
+      @squareSwitchDisabledColor: #eee;

@@ -1,6 +1,7 @@
 .bg-switch {
   display: inline-block;
-  
+  vertical-align: middle;
+
   // BASE SWITCH
     .bg-toggle {
       position: absolute;
@@ -23,14 +24,6 @@
     }
 
   // ROUND SWITCH
-    @roundSwitchHeight: 70px;
-    @roundSwitchRadius: 60px;
-    @roundSwitchOffBGcolor: #f1f1f1;
-    @roundSwitchBorderColor: #dddddd;
-    @roundSwitchOnBGColor: @main-color;
-    @roundSwitchToggleBGColor: #fff;
-    @roundSwitchDisabledBGColor: #fefefe;
-
     input.bg-round {
       & + label {
         padding: 2px;
@@ -62,8 +55,14 @@
           width: calc(@roundSwitchHeight / 2);
           background-color: @roundSwitchToggleBGColor;
           border-radius: 100%;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
           transition: margin 0.4s;
+        }
+
+        &:hover {
+          &::before {
+            background-color: @roundSwitchOnBGColor;
+          }
         }
       }
 
@@ -81,6 +80,183 @@
         & + label {
           &::before {
             background-color: @roundSwitchDisabledBGColor;
+          }
+        }
+      }
+    }
+
+  // FLAT SWITCH
+    input.bg-round-flat {
+      & + label {
+        padding: 2px;
+        width: calc(@flatSwitchHeight * 2);
+        height: @flatSwitchHeight;
+        background-color: @flatSwitchOffColor;
+        border-radius: 60px;
+        transition: background 0.4s;
+
+        &::before,
+        &::after {
+          display: block;
+          position: absolute;
+          content: "";
+        }
+
+        // OFF
+        &::before {
+          top: @flatSwitchPadding;
+          left: calc(@flatSwitchPadding + 1px);
+          bottom: @flatSwitchPadding;
+          right: calc(@flatSwitchPadding + 1px);
+          background-color: #fff;
+          border-radius: 60px;
+          transition: background 0.4s;
+        }
+
+        // ON
+        &::after {
+          top: 4px;
+          left: 4px;
+          bottom: 4px;
+          width: calc(@flatSwitchHeight - 7px);
+          background-color: @flatSwitchOffColor;
+          border-radius: 52px;
+          transition: margin 0.4s, background 0.4s;
+        }
+
+        &:hover {
+          background-color: @flatSwitchOnColor;
+
+          &::after {
+            background-color: @flatSwitchOnColor;
+          }
+        }
+      }
+
+      &:checked + label {
+        background-color: @flatSwitchOnColor;
+
+        &::after {
+          margin-left: calc(@flatSwitchHeight - 1px);
+          background-color: @flatSwitchOnColor;
+        }
+      }
+
+      &:disabled {
+        & + label {
+          background-color: @flatSwitchDisabledBGColor;
+
+          &::after {
+            background-color: @flatSwitchDisabledBGColor;
+          }
+        }
+      }
+    }
+
+  // SQUARE SWITCH
+    input.bg-square {
+      & + label {
+        width: @squareSwitchSize;
+        height: @squareSwitchSize;
+
+        &::after {
+          display: block;
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          border: solid @squareSwitchBorderSize @squareSwitchOffBorderColor;
+        }
+
+        // ON
+        &::after {
+          background-color: @squareSwitchOffBGColor;
+          transition: background-color 0.4s;
+        }
+
+        &:hover {
+          &::after {
+            border-color: @squareSwitchOnBorderColor;
+          }
+        }
+      }
+
+      &:checked + label {
+        &::after {
+          background-color: @squareSwitchOnBGColor;
+          border-color: darken(@squareSwitchOnBorderColor, 10%);
+        }
+      }
+
+      &:disabled {
+        & + label {
+          &::after {
+            background-color: @squareSwitchDisabledColor;
+          }
+
+          &:hover {
+            &::after {
+              border-color: @squareSwitchOffBorderColor;
+            }
+          }
+        }
+      }
+    }
+
+  // YES-NO
+    input.bg-yes-no {
+      & + label {
+        padding: 2px;
+        width: calc(@yesNoSwitchHeight * 2);
+        height: @yesNoSwitchHeight;
+
+        &::before,
+        &::after {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          color: @yesNoTextColor;
+          font-size: @yesNoFontSize;
+          text-align: center;
+          line-height: @yesNoSwitchHeight;
+        }
+
+        &::before {
+          background-color: @yesNoOffBGColor;
+          content: attr(off);
+          transition: transform 0.5s;
+          backface-visibility: hidden;
+        }
+
+        &::after {
+          background-color: @yesNoOnBGColor;
+          content: attr(on);
+          transition: transform 0.5s;
+          transform: @yesNoTransition;
+          backface-visibility: hidden;
+        }
+      }
+
+      &:checked + label {
+        &:before {
+          transform: @yesNoTransition;
+        }
+
+        &:after {
+          transform: @yesNoTransitionOff;
+        }
+      }
+
+      &:disabled {
+        & + label {
+          &::before,
+          &::after {
+            text-decoration: line-through;
           }
         }
       }
