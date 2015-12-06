@@ -3683,7 +3683,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
 }
 .main-nav .nav-logo-fa {
   font-size: 43px;
@@ -4146,6 +4146,19 @@ html {
 .image-content-hover:hover .title,
 .image-content-hover:hover .options-list {
   display: block;
+}
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.69);
+  text-align: center;
+  z-index: 999;
+}
+.image-modal img {
+  position: relative;
 }
 article {
   margin: 0 auto;

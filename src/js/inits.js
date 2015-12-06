@@ -53,4 +53,49 @@ $(function() {
   $('.message-box .fa-times').click(function() {
     $(this).parent().parent().slideUp();
   });
+
+  // LIGHTBOXES
+  function buildImageLightBox(image) {
+    var div = $('<div/>').addClass('image-modal').attr('id', 'imageModal');;
+    var img = $('<img/>').addClass('image animated zoomIn');
+    var browserHeight = $(window).height();
+    var browserWidth = $(window).width();
+    var imageHeight;
+    var imageWidth;
+    var html;
+    var i = new Image()
+
+    i.src = image;
+    imageHeight = i.height
+    imageWidth = i.width
+
+    if (imageWidth > browserWidth) {
+      img.css('width', '80%');
+    } else {
+      img.css('height', '80%');
+    }
+
+    html = div.clone().append(img.clone().attr('src', image));
+    return html;
+  };
+
+  function centerImageVertically(image) {
+    var imageHeight = image.height();
+    var browserHeight = $(window).height();
+    var newTop = (browserHeight - imageHeight) / 2;
+    image.css('top', newTop);
+  };
+
+  // Opens Modal - Image LightBox
+  $('.modal-image-lightbox').click(function() {
+    var image = $(this).attr('data');
+    $('body').after(buildImageLightBox(image));
+    centerImageVertically($('.image-modal img'));
+  });
+
+  $(document).on('click', '.image-modal', function(e) {
+    if (!$(e.target).hasClass('image')) {
+      $('.image-modal').hide();
+    }
+  });
 });
