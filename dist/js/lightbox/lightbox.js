@@ -1,7 +1,7 @@
 // LIGHTBOXES
 function buildImageLightBox(image) {
-  var div = $('<div/>').addClass('image-modal').attr('id', 'imageModal');;
-  var img = $('<img/>').addClass('image animated zoomIn');
+  var div = $('<div/>').addClass('image-modal').attr('id', 'imageModal');
+  var img = $('<img/>').addClass('image animated ' + lightbox.animation);
   var browserHeight = $(window).height();
   var browserWidth = $(window).width();
   var imageHeight;
@@ -13,9 +13,9 @@ function buildImageLightBox(image) {
   // ALL IMAGE DIMENSIONS LARGER THAN BROWSER
     if ((imageWidth >= browserWidth) && (imageHeight >= browserHeight)) {
       if (imageWidth >= imageHeight) {
-        img.css('width', '80%');
+        img.css('width', lightbox.percent);
       } else { // portrait
-        img.css('height', '80%');
+        img.css('height', lightbox.percent);
       }
       html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
       return html;
@@ -23,14 +23,14 @@ function buildImageLightBox(image) {
 
   // IMAGE WIDTH IS GREATER THAN BROWSER WIDTH
     if ((imageWidth >= browserWidth) && (imageHeight <= browserHeight)) {
-      img.css('width', '80%');
+      img.css('width', lightbox.percent);
       html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
       return html;
     }
 
   // IMAGE HEIGHT IS GREATER THAN HEIGHT WIDTH
     if ((imageWidth <= browserWidth) && (imageHeight >= browserHeight)) {
-      img.css('height', '80%');
+      img.css('height', lightbox.percent);
       html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
       return html;
     }

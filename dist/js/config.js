@@ -4,3 +4,8 @@ var navbar = {
   secondClass: 'main-nav-second',
   switchPixels: ($(window).height() - 80) // in pixels - when to switch styles
 }
+
+var lightbox = {
+  animation: 'zoomIn',
+  percent: '80%'
+}
