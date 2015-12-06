@@ -3225,9 +3225,18 @@ ul {
 ul {
   list-style: none;
 }
-/* Main/General Settings: */
-/* Main Nav Bar Settings */
-/* Main Header Settings */
+/* ------------------------- //
+  // Main/General Settings     //
+  // ------------------------- */
+/* ------------------------- //
+  //  Main Nav Bar Settings    //
+  // ------------------------- */
+/* ------------------------- //
+  // Main Header Settings      //
+  // ------------------------- */
+/* -------------------------- //
+  // Section / Article Settings //
+  // ------------------------- */
 * {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -3253,6 +3262,25 @@ button {
 .btn-default:disabled {
   border-color: #ffffff;
   cursor: arrow;
+}
+section article header {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3da0e3;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #3da0e3;
+}
+section article p {
+  line-height: 2;
+}
+section article footer {
+  margin-top: 20px;
+  color: #898989;
+  font-size: 14px;
+  padding: 10px 0 0;
+  border-top: solid 1px transparent;
 }
 * {
   box-sizing: border-box;
@@ -3451,9 +3479,6 @@ html {
 .main-nav-second .simple-search-container input:-ms-input-placeholder {
   color: #000;
 }
-section {
-  height: 2000px;
-}
 .main-header {
   width: 100%;
   height: 100%;
@@ -3491,4 +3516,15 @@ section {
 .main-header .header-options-list .fa {
   font-size: 100px;
   color: #fff;
+}
+article {
+  margin: 0 auto;
+  max-width: 1000px;
+  border: solid 1px #f4f1f1;
+  padding: 30px;
+}
+section {
+  margin: 0;
+  width: 100%;
+  padding: 50px;
 }
