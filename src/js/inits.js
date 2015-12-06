@@ -21,15 +21,18 @@ $(function() {
   }
 
   function toggleClass(elm, class1, class2) {
-    if (elm.hasClass(class1)) {
-      elm.addClass(class2);
-      elm.removeClass(class1);
-    } else {
-      elm.addClass(class1);
-      elm.removeClass(class2);
+    if(elm.hasClass('animate-label')) {
+      if (elm.hasClass(class1)) {
+        elm.addClass(class2);
+        elm.removeClass(class1);
+      } else {
+        elm.addClass(class1);
+        elm.removeClass(class2);
+      }
     }
   }
 
+  // Animates Input Label
   $('.animate-label > input').keyup(function() {
     var curLabel = $(this).parent();
     if ($(this)[0].value.length != 0) {
@@ -39,9 +42,9 @@ $(function() {
     }
   });
 
+  // Clears Input Value and Triggers Animation
   $('.animate-label > .fa-times').click(function() {
     var curLabel = $(this).next();
-    console.log(curLabel);
     curLabel.val('');
     toggleClass($(this).parent(), 'lbl-empty', 'lbl-full');;
   });
