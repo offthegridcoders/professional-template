@@ -1,7 +1,7 @@
 .main-footer {
   background-color: @main-footer-bgcolor;
   padding: 50px 100px;
-  height: 400px;
+  height: 300px;
 
   .main-links {
     margin: 0 auto;
@@ -35,7 +35,7 @@
       text-decoration: none;
       position: relative;
       text-transform: uppercase;
-      
+
       &:hover {
       .link-hover-active(@main-footer-link-color);
       }
@@ -43,6 +43,24 @@
 
     .active {
       .link-hover-active(@main-footer-link-color);
+    }
+  }
+
+  .social-links {
+    margin: 50px auto 0;
+    max-width: 800px;
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      margin: 10px;
+      padding: 5px;
+      color: #fff;
+      font-size: 40px;
     }
   }
 }

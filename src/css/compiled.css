@@ -4042,7 +4042,7 @@ html {
 .main-footer {
   background-color: #3da0e3;
   padding: 50px 100px;
-  height: 400px;
+  height: 300px;
 }
 
 .main-footer .main-links {
@@ -4089,6 +4089,24 @@ html {
   margin-left: -13px;
   background: #fff;
   background-color: #fff;
+}
+
+.main-footer .social-links {
+  margin: 50px auto 0;
+  max-width: 800px;
+  list-style: none;
+  text-align: center;
+}
+
+.main-footer .social-links li {
+  display: inline-block;
+}
+
+.main-footer .social-links a {
+  margin: 10px;
+  padding: 5px;
+  color: #fff;
+  font-size: 40px;
 }
 
 .main-header {
