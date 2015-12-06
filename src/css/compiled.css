@@ -3756,6 +3756,10 @@ ul {
   // ------------------------- */
 
 /* ------------------------- //
+  // Button Settings           //
+  // ------------------------- */
+
+/* ------------------------- //
   // Switch Settings           //
   // ------------------------- */
 
@@ -3816,7 +3820,7 @@ button:disabled:hover {
 }
 
 .btn-round {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 section article header {
@@ -4014,8 +4018,8 @@ section article footer {
 
 .bg-switch input.bg-yes-no + label {
   padding: 2px;
-  width: calc(70px);
-  height: 35px;
+  width: calc(60px);
+  height: 30px;
 }
 
 .bg-switch input.bg-yes-no + label::before,
@@ -4029,7 +4033,7 @@ section article footer {
   color: #fff;
   font-size: 14px;
   text-align: center;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .bg-switch input.bg-yes-no + label::before {
