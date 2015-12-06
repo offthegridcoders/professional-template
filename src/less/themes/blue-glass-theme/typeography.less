@@ -1,6 +1,6 @@
 section {
   article {
-    header {
+    & > header {
       font-size: 30px;
       font-weight: 600;
       text-transform: uppercase;
@@ -14,7 +14,7 @@ section {
       line-height: @paragraph-line-height;
     }
 
-    footer {
+    & > footer {
       margin-top: 20px;
       color: @article-footer-text-color;
       font-size: @article-footer-font-size;

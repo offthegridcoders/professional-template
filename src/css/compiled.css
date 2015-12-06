@@ -3831,7 +3831,7 @@ button:focus {
   border-radius: 20px;
 }
 
-section article header {
+section article > header {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3845,7 +3845,7 @@ section article p {
   line-height: 2;
 }
 
-section article footer {
+section article > footer {
   margin-top: 20px;
   color: #898989;
   font-size: 14px;
@@ -4075,6 +4075,7 @@ section article footer {
 .form-default {
   width: 100%;
   position: relative;
+  font-size: 0;
 }
 
 .form-default input[type="text"],
@@ -4134,11 +4135,31 @@ section article footer {
   line-height: 20px;
 }
 
+.form-default header {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .form-default label {
   color: #444;
+  font-size: 14px;
   font-weight: 600;
   padding-top: 10px;
   display: block;
+}
+
+.form-default label.half {
+  width: 50%;
+  display: inline-block;
+}
+
+.form-default label.half.half-first {
+  padding-right: 10px;
+}
+
+.form-default label.half.half-second {
+  padding-left: 10px;
 }
 
 .form-default label.animate-label {
@@ -4173,7 +4194,7 @@ section article footer {
 }
 
 .form-default label.lbl-empty .fa-times {
-  opacity: 0;
+  display: none;
 }
 
 .form-default label.lbl-empty input {
@@ -4195,7 +4216,7 @@ section article footer {
 }
 
 .form-default label.lbl-full .fa-times {
-  opacity: 1;
+  display: block;
 }
 
 .form-default label.lbl-full input {
@@ -4207,6 +4228,31 @@ section article footer {
   top: 0;
   padding-left: 0;
   color: #444;
+}
+
+.form-default label.lbl-full span em {
+  color: #f00;
+  vertical-align: middle;
+  padding-left: 2px;
+}
+
+.form-default label.error input {
+  border-color: #f00;
+}
+
+.form-default label.error .fa-times {
+  top: 50%;
+  margin-top: -3px;
+}
+
+.form-default label.error .error-message {
+  color: #f00;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-default .btn-wrapper {
+  margin-top: 20px;
 }
 
 * {

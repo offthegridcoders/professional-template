@@ -1,6 +1,7 @@
 .form-default {
   width: 100%;
   position: relative;
+  font-size: 0;
 
   input[type="text"],
   input[type="password"],
@@ -42,11 +43,31 @@
     .placeholder-style;
   }
 
+  header {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
   label {
     color: @labelDefaultColor;
+    font-size: @default-label-font-size;
     font-weight: 600;
     padding-top: 10px;
     display: block;
+  }
+
+  label.half {
+    width: 50%;
+    display: inline-block;
+  }
+
+  label.half.half-first {
+    padding-right: 10px;
+  }
+
+  label.half.half-second {
+    padding-left: 10px;
   }
 
   label.animate-label {
@@ -83,7 +104,7 @@
   label.lbl-empty {
 
     .fa-times {
-      opacity: 0;
+      display: none;
     }
 
     input {
@@ -102,7 +123,7 @@
     padding-top: 10px;
 
     .fa-times {
-      opacity: 1;
+      display: block;
     }
 
     input {
@@ -114,6 +135,33 @@
       top: 0;
       padding-left: 0;
       color: @labelDefaultColor;
+
+      em {
+        color: #f00;
+        vertical-align: middle;
+        padding-left: 2px;
+      }
     }
+  }
+
+  label.error {
+    input {
+      border-color: @default-error-color;
+    }
+
+    .fa-times {
+      top: 50%;
+      margin-top: -3px;
+    }
+
+    .error-message {
+      color: @default-error-color;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+
+  .btn-wrapper {
+    margin-top: 20px;
   }
 }

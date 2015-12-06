@@ -48,4 +48,9 @@ $(function() {
     curLabel.val('');
     toggleClass($(this).parent(), 'lbl-empty', 'lbl-full');;
   });
+
+  // Closes Message Box
+  $('.message-box .fa-times').click(function() {
+    $(this).parent().parent().slideUp();
+  });
 });
