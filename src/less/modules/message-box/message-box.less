@@ -1,0 +1,64 @@
+.message-box {
+  display: block;
+
+  div {
+    border: solid 1px;
+    position: relative;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+
+  .defaultMessageBoxStyling(@bgColor) {
+    border-color: @bgColor;
+    background-color: lighten(@bgColor, 40%);
+
+    .fa-exclamation-triangle,
+    .fa-exclamation-circle,
+    .fa-times-circle,
+    .fa-check-circle {
+      color: @bgColor;
+      padding: 10px 0;
+      width: 50px;
+      height: 100%;
+      font-size: 40px;
+      vertical-align: middle;
+      text-align: center;
+      background-color: lighten(@bgColor, 30%);
+      margin-right: 10px;
+    }
+
+    .fa-times {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      color: @bgColor;
+      cursor: pointer;
+      font-size: 20px;
+      display: none;
+    }
+
+    &:hover {
+      .fa-times {
+        display: block;
+      }
+    }
+  }
+
+  .success-box {
+    .defaultMessageBoxStyling(@success-box-color);
+  }
+
+  .error-box {
+    .defaultMessageBoxStyling(@error-box-color);
+  }
+
+  .warning-box {
+    .defaultMessageBoxStyling(@warning-box-color);
+  }
+
+  .alert-box {
+    .defaultMessageBoxStyling(@alert-box-color);
+  }
+}

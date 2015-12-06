@@ -3751,6 +3751,10 @@ ul {
   // Article Settings          //
   // ------------------------- */
 
+/* ------------------------- //
+  // Message Box Settings      //
+  // ------------------------- */
+
 * {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -4158,11 +4162,164 @@ html {
   margin: 50px auto;
 }
 
+.message-box {
+  display: block;
+}
+
+.message-box div {
+  border: solid 1px;
+  position: relative;
+}
+
+.message-box span {
+  vertical-align: middle;
+}
+
+.message-box .success-box {
+  border-color: #5cbb5f;
+  background-color: #ecf7ec;
+}
+
+.message-box .success-box .fa-exclamation-triangle,
+.message-box .success-box .fa-exclamation-circle,
+.message-box .success-box .fa-times-circle,
+.message-box .success-box .fa-check-circle {
+  color: #5cbb5f;
+  padding: 10px 0;
+  width: 50px;
+  height: 100%;
+  font-size: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #c8e8c9;
+  margin-right: 10px;
+}
+
+.message-box .success-box .fa-times {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: #5cbb5f;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.message-box .success-box:hover .fa-times {
+  display: block;
+}
+
+.message-box .error-box {
+  border-color: #d94343;
+  background-color: #fbeded;
+}
+
+.message-box .error-box .fa-exclamation-triangle,
+.message-box .error-box .fa-exclamation-circle,
+.message-box .error-box .fa-times-circle,
+.message-box .error-box .fa-check-circle {
+  color: #d94343;
+  padding: 10px 0;
+  width: 50px;
+  height: 100%;
+  font-size: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #f3c2c2;
+  margin-right: 10px;
+}
+
+.message-box .error-box .fa-times {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: #d94343;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.message-box .error-box:hover .fa-times {
+  display: block;
+}
+
+.message-box .warning-box {
+  border-color: #f09712;
+  background-color: #fcebd2;
+}
+
+.message-box .warning-box .fa-exclamation-triangle,
+.message-box .warning-box .fa-exclamation-circle,
+.message-box .warning-box .fa-times-circle,
+.message-box .warning-box .fa-check-circle {
+  color: #f09712;
+  padding: 10px 0;
+  width: 50px;
+  height: 100%;
+  font-size: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #f9d6a2;
+  margin-right: 10px;
+}
+
+.message-box .warning-box .fa-times {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: #f09712;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.message-box .warning-box:hover .fa-times {
+  display: block;
+}
+
+.message-box .alert-box {
+  border-color: #f09712;
+  background-color: #fcebd2;
+}
+
+.message-box .alert-box .fa-exclamation-triangle,
+.message-box .alert-box .fa-exclamation-circle,
+.message-box .alert-box .fa-times-circle,
+.message-box .alert-box .fa-check-circle {
+  color: #f09712;
+  padding: 10px 0;
+  width: 50px;
+  height: 100%;
+  font-size: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #f9d6a2;
+  margin-right: 10px;
+}
+
+.message-box .alert-box .fa-times {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: #f09712;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.message-box .alert-box:hover .fa-times {
+  display: block;
+}
+
 article {
   margin: 0 auto;
   max-width: 1000px;
   border: solid 1px #f4f1f1;
   padding: 30px;
+}
+
+.message-box {
+  margin: 10px 0;
 }
 
 section {
