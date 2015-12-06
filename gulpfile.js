@@ -9,6 +9,7 @@
   var concatCss = require('gulp-concat-css');
   var path = require('path');
   var csslint = require('gulp-csslint');
+  var clean = require('gulp-clean');
 
 // ----------------------
 // VARIABLES
@@ -48,16 +49,21 @@
     return gulp.watch([
         files.src.less,
         files.src.html,
-        files.src.assets
+        files.src.assets,
+        files.src.js
       ], ['default']);
   });
 
 // ----------------------
 // LESS AND CSS FUNCTIONS
 // ----------------------
+  // COMPILES LESS
+    gulp.task('clean', function () {
+      return gulp.src([paths.src.css, paths.dist.css], {read: false}).pipe(clean());
+    });
 
   // COMPILES LESS
-    gulp.task('compile-less', function () {
+    gulp.task('compile-less', ['clean'], function () {
     return gulp.src(files.src.mainLess)
       .pipe(less({
         paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -111,4 +117,10 @@
     gulp.task('copy-assets', function() {
       return gulp.src(files.src.assets)
         .pipe(gulp.dest(paths.dist.assets))
+    });
+
+  // MOVES JS TO DIST
+    gulp.task('copy-assets', function() {
+      return gulp.src(files.src.js)
+        .pipe(gulp.dest(paths.dist.js))
     });
