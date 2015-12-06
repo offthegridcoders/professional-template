@@ -10,21 +10,37 @@ function buildImageLightBox(image) {
   imageHeight = image.height;
   imageWidth = image.width;
 
-  console.log(imageHeight);
-  console.log(imageWidth);
-  console.log(browserHeight);
-  console.log(browserWidth);
-
-  if ((imageWidth > browserWidth) && (imageHeight > browserHeight)) {
-    if (imageWidth > imageHeight) { // landscape
-      img.css('width', '80%');
-    } else { // portrait
-      img.css('height', '80%');
+  // ALL IMAGE DIMENSIONS LARGER THAN BROWSER
+    if ((imageWidth >= browserWidth) && (imageHeight >= browserHeight)) {
+      if (imageWidth >= imageHeight) {
+        img.css('width', '80%');
+      } else { // portrait
+        img.css('height', '80%');
+      }
+      html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
+      return html;
     }
-  }
 
-  html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
-  return html;
+  // IMAGE WIDTH IS GREATER THAN BROWSER WIDTH
+    if ((imageWidth >= browserWidth) && (imageHeight <= browserHeight)) {
+      img.css('width', '80%');
+      html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
+      return html;
+    }
+
+  // IMAGE HEIGHT IS GREATER THAN HEIGHT WIDTH
+    if ((imageWidth <= browserWidth) && (imageHeight >= browserHeight)) {
+      img.css('height', '80%');
+      html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
+      return html;
+    }
+
+  // IMAGE IS SMALLER THAN BROWSER
+    if ((imageWidth <= browserWidth) && (imageHeight <= browserHeight)) {
+      html = div.clone().append(img.clone().attr('src', $(image).attr('src')));
+      return html;
+    }
+
 };
 
 function centerImageVertically(image) {
