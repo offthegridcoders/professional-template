@@ -1,5 +1,7 @@
 ### Configuration
+
 > LESS - ./src/less/themes/[select-theme]/variables.less
+
 > JS - ./src/js/config.js
 
 
