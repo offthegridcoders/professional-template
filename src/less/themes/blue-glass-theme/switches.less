@@ -1,0 +1,88 @@
+.bg-switch {
+  display: inline-block;
+  
+  // BASE SWITCH
+    .bg-toggle {
+      position: absolute;
+      margin-left: -9999px;
+      visibility: hidden;
+
+      & + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+      }
+
+      &:disabled {
+        & + label {
+          cursor: default;
+        }
+      }
+    }
+
+  // ROUND SWITCH
+    @roundSwitchHeight: 70px;
+    @roundSwitchRadius: 60px;
+    @roundSwitchOffBGcolor: #f1f1f1;
+    @roundSwitchBorderColor: #dddddd;
+    @roundSwitchOnBGColor: @main-color;
+    @roundSwitchToggleBGColor: #fff;
+    @roundSwitchDisabledBGColor: #fefefe;
+
+    input.bg-round {
+      & + label {
+        padding: 2px;
+        width: @roundSwitchHeight;
+        height: calc(@roundSwitchHeight / 2);
+        background-color: @roundSwitchBorderColor;
+        border-radius: @roundSwitchRadius;
+
+        &::before,
+        &::after {
+          display: block;
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          bottom: 1px;
+          content: "";
+        }
+
+        // OFF
+        &::before {
+          right: 1px;
+          background-color: @roundSwitchOffBGcolor;
+          border-radius: @roundSwitchRadius;
+          transition: background 0.4s;
+        }
+
+        // ON
+        &::after {
+          width: calc(@roundSwitchHeight / 2);
+          background-color: @roundSwitchToggleBGColor;
+          border-radius: 100%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          transition: margin 0.4s;
+        }
+      }
+
+      &:checked + label {
+        &::before {
+          background-color: @roundSwitchOnBGColor;
+        }
+
+        &::after {
+          margin-left: 33px;
+        }
+      }
+
+      &:disabled {
+        & + label {
+          &::before {
+            background-color: @roundSwitchDisabledBGColor;
+          }
+        }
+      }
+    }
+}
