@@ -1,17 +1,22 @@
 //$('.main-header').parallax({imageSrc: '../assets/headers/header.jpg'});
 
 $(function() {
-  function inits() {
+
+  // Initializations
+  function initializeSite() {
     new WOW().init();
   }
 
+  initializeSite();
+
+  // Adjusts NavBar Styles
   window.onscroll = function (e) {
-    if (window.pageYOffset > $(window).height()) {
-      $('#mainNav').addClass('main-nav-second');
-      $('#mainNav').removeClass('main-nav-first');
+    if (window.pageYOffset > navbar.switchPixels) {
+      navbar.element.addClass(navbar.secondClass);
+      navbar.element.removeClass(navbar.firstClass);
     } else {
-      $('#mainNav').addClass('main-nav-first');
-      $('#mainNav').removeClass('main-nav-second');
+      navbar.element.addClass(navbar.firstClass);
+      navbar.element.removeClass(navbar.secondClass);
     }
   }
 });
