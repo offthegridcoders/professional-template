@@ -3788,6 +3788,10 @@ button:disabled:hover {
   border-color: #ddd;
 }
 
+button:focus {
+  outline: none;
+}
+
 .btn-default {
   background-color: #3da0e3;
   border: solid 1px #3da0e3;
@@ -4092,11 +4096,6 @@ html {
   left: 0;
   width: 100%;
   z-index: 999;
-}
-
-.main-nav .nav-logo-img {
-  height: 40px;
-  width: 100px;
 }
 
 .main-nav .nav-logo-fa {
@@ -4429,6 +4428,7 @@ html {
 
 .message-box span {
   vertical-align: middle;
+  display: inline-block;
 }
 
 .message-box .success-box {
