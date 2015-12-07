@@ -1,0 +1,214 @@
+<!--
+=====================================
+  Professional Template
+  Created by: Stephen Young
+  https://github.com/offthegridcoders/
+======================================
+-->
+
+<!DOCTYPE html>
+<html>
+  <!-- HEAD -->
+    <head>
+      <!-- TITLE -->
+        <title>LESS Boilerplate</title>
+      <!-- META TAGS -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- STYLESHEETS -->
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="" />
+        <link rel="stylesheet" href="css/compiled.css">
+      <!-- SCRIPTS -->
+        <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery-ui-button.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery-widget.js" type="text/javascript"></script>
+        <script src="js/vendor/carousel.js" type="text/javascript"></script>
+        <script src="js/vendor/wow.min.js" type="text/javascript"></script>
+        <script src="js/vendor/parallax.min.js" type="text/javascript"></script>
+    </head>
+  <!-- BODY -->
+    <body>
+      <!-- MAIN NAVBAR -->
+        <nav class="main-nav main-nav-first" id="mainNav">
+          <!-- LOGO -->
+            <i class="fa fa-hashtag nav-logo-fa" ></i>
+          <!-- MAIN NAVIGATION LINKS -->
+          <ul class="main-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="active">Login</a></li>
+            <li>
+              <!-- SIMPLE SEARCH CONTAINER MODULE -->
+              <form class="simple-search-container" onsubmit="javascript: console.log('Form Submitted'); return false;">
+                <input type="text" placeholder="Search...">
+                <i class="fa fa-search"></i>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      <!-- MAIN SECTION -->
+        <section class="login-wrapper">
+          <!-- CONTENT -->
+            <form class="form-default wow zoomIn">
+              <header><i class="fa fa-user"></i> Login</header>
+              <!-- EMAIL -->
+                <label class="animate-label lbl-empty"><span>Email Address<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="email" required>
+                </label>
+              <!-- PASSWORD -->
+                <label class="animate-label lbl-empty"><span>Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" required>
+                </label>
+              <!-- BUTTON WRAPPER -->
+                <div class="btn-wrapper">
+                  <button class="btn-default">submit</button>
+                  <button class="btn-default-clear">forgot password</button>
+                </div>
+                <h3 class="signup">Dont have a login? <a href="#">Register</a>.</h3>
+            </form>
+        </section>
+      <!-- MAIN SECTION -->
+        <section class="login-wrapper">
+          <!-- CONTENT -->
+            <form class="form-default wow zoomIn">
+              <header><i class="fa fa-check-square"></i> Register</header>
+              <!-- FIRST NAME -->
+                <label class="animate-label lbl-empty"><span>First Name<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="text" required>
+                </label>
+                <!-- LAST NAME -->
+                  <label class="animate-label lbl-empty"><span>Last Name<em>*</em></span>
+                    <i class="fa fa-times"></i>
+                    <input type="text" required>
+                  </label>
+              <!-- EMAIL -->
+                <label class="animate-label lbl-empty"><span>Email Address<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="email" required>
+                </label>
+              <!-- PASSWORD -->
+                <label class="animate-label lbl-empty"><span>Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" required>
+                </label>
+              <!-- PASSWORD -->
+                <label class="animate-label lbl-empty"><span>Confirm Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" required>
+                </label>
+              <!-- BUTTON WRAPPER -->
+                <div class="btn-wrapper">
+                  <button class="btn-default">Register</button>
+                </div>
+                <h3 class="signup">Already registered? <a href="#">Login</a>.</h3>
+            </form>
+        </section>
+      <!-- MAIN SECTION -->
+        <section class="login-wrapper">
+          <!-- CONTENT -->
+            <form class="form-default wow zoomIn">
+              <header><i class="fa fa-code"></i> Reset Password</header>
+              <!-- EMAIL -->
+                <label class="animate-label lbl-empty"><span>New Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="email" required>
+                </label>
+              <!-- PASSWORD -->
+                <label class="animate-label lbl-empty"><span>Confirm Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" required>
+                </label>
+              <!-- BUTTON WRAPPER -->
+                <div class="btn-wrapper">
+                  <button class="btn-default">Submit &amp; Login</button>
+                </div>
+            </form>
+        </section>
+      <!-- MAIN SECTION -->
+        <section class="login-wrapper">
+          <!-- CONTENT -->
+            <form class="form-default wow zoomIn">
+              <header><i class="fa fa-code"></i> Reset Password</header>
+              <!-- EMAIL -->
+                <label class="animate-label lbl-full error"><span>New Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" value="123456" required>
+                </label>
+              <!-- PASSWORD -->
+                <label class="animate-label lbl-full error"><span>Confirm Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" value="123456" required>
+                  <p class="error-message">Passwords do not match</p>
+                </label>
+              <!-- BUTTON WRAPPER -->
+                <div class="btn-wrapper">
+                  <button class="btn-default">Submit &amp; Login</button>
+                </div>
+            </form>
+        </section>
+      <!-- MAIN SECTION -->
+        <section class="login-wrapper">
+          <!-- CONTENT -->
+            <form class="form-default wow zoomIn">
+              <header><i class="fa fa-user"></i> Login</header>
+              <!-- EMAIL -->
+              <label class="animate-label lbl-full error"><span>Email Address<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="email" value="example@example.com" required>
+                  <p class="error-message">Email Address is already taken</p>
+                </label>
+              <!-- PASSWORD -->
+                <label class="animate-label lbl-empty"><span>Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" required>
+                </label>
+              <!-- BUTTON WRAPPER -->
+                <div class="btn-wrapper">
+                  <button class="btn-default">submit</button>
+                  <button class="btn-default-clear">forgot password</button>
+                </div>
+                <h3 class="signup">Dont have a login? <a href="#">Register</a>.</h3>
+            </form>
+        </section>
+      <!-- MAIN SECTION -->
+        <section class="login-wrapper">
+          <!-- CONTENT -->
+            <form class="form-default wow zoomIn">
+              <header><i class="fa fa-user"></i> Login</header>
+              <!-- EMAIL -->
+              <label class="animate-label lbl-full"><span>Email Address<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="email" value="example@example.com" required>
+                </label>
+              <!-- PASSWORD -->
+                <label class="animate-label lbl-empty error"><span>Password<em>*</em></span>
+                  <i class="fa fa-times"></i>
+                  <input type="password" required>
+                  <p class="error-message">Incorrect Password.</p>
+                </label>
+              <!-- BUTTON WRAPPER -->
+                <div class="btn-wrapper">
+                  <button class="btn-default">submit</button>
+                  <button class="btn-default-clear">forgot password</button>
+                </div>
+                <h3 class="signup">Dont have a login? <a href="#">Register</a>.</h3>
+            </form>
+        </section>
+      <!-- SCRIPTS -->
+        <script src="js/config.js" type="text/javascript"></script>
+        <script src="js/functions.js" type="text/javascript"></script>
+        <script src="js/lightbox/lightbox.js" type="text/javascript"></script>
+        <script src="js/modals/modals.js" type="text/javascript"></script>
+        <script src="js/inits.js" type="text/javascript"></script>
+    </body>
+</html>
