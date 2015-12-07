@@ -4318,16 +4318,16 @@ a {
 }
 
 .form-default label.half {
-  width: 50%;
+  width: calc(47.5%);
   display: inline-block;
 }
 
 .form-default label.half.half-first {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .form-default label.half.half-second {
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .form-default label.animate-label {
