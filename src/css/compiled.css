@@ -4696,7 +4696,17 @@ html {
 }
 
 .main-footer {
-  background-color: #3da0e3;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ac5e0+0,3da0e3+100,7db9e8+100 */
+  background: #9ac5e0;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #9ac5e0 0%, #3da0e3 100%, #7db9e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #9ac5e0 0%, #3da0e3 100%, #7db9e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #9ac5e0 0%, #3da0e3 100%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ac5e0', endColorstr='#7db9e8', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
   padding: 50px 100px;
   height: 300px;
 }
@@ -5175,4 +5185,6 @@ section {
   margin: 0;
   width: 100%;
   overflow: auto;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.38);
 }
