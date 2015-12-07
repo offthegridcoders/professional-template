@@ -2,7 +2,7 @@
 
 > LESS - ./src/less/themes/[select-theme]/variables.less & ./src/less/main.less (to change theme)
 
-> JS - ./src/js/config.js
+> JS - ./src/js/inits.js
 
 
 #### Contact
