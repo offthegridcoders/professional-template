@@ -3673,6 +3673,7 @@ html {
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 .clearfix {
   overflow: auto;
@@ -4147,7 +4148,7 @@ html {
 .image-content-hover:hover .options-list {
   display: block;
 }
-.image-modal {
+.image-lightbox {
   position: fixed;
   top: 0;
   left: 0;
@@ -4157,8 +4158,36 @@ html {
   text-align: center;
   z-index: 999;
 }
-.image-modal img {
+.image-lightbox img {
   position: relative;
+}
+.modal-message-container {
+  z-index: 999;
+  min-width: 100px;
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.38);
+}
+.modal-message-container > div {
+  background-color: #fff;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+.modal-message-container .fa-times-circle {
+  display: block;
+  text-align: right;
+  background-color: #3da0e3;
+  padding: 3px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-message-container .message-box {
+  width: 400px;
+  margin: 0;
 }
 article {
   margin: 0 auto;
@@ -4187,4 +4216,5 @@ article {
 section {
   margin: 0;
   width: 100%;
+  overflow: auto;
 }

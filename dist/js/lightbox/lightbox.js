@@ -1,6 +1,6 @@
 // LIGHTBOXES
 function buildImageLightBox(image) {
-  var div = $('<div/>').addClass('image-modal').attr('id', 'imageModal');
+  var div = $('<div/>').addClass('image-lightbox').attr('id', 'imageLightbox');
   var img = $('<img/>').addClass('image animated ' + lightbox.animation);
   var browserHeight = $(window).height();
   var browserWidth = $(window).width();
@@ -50,18 +50,18 @@ function centerImageVertically(image) {
   image.css('top', newTop);
 };
 
-// Opens Modal - Image LightBox
-$('.modal-image-lightbox').click(function() {
+// Opens Image LightBox
+$('.lightbox-image').click(function() {
   var i = new Image();
   i.src = $(this).attr('data');
   $(i).on('load', function() {
     $('body').append(buildImageLightBox(i));
-    centerImageVertically($('.image-modal img'));
+    centerImageVertically($('.image-lightbox img'));
   });
 });
 
-$(document).on('click', '.image-modal', function(e) {
+$(document).on('click', '.image-lightbox', function(e) {
   if (!$(e.target).hasClass('image')) {
-    $('.image-modal').remove();
+    $('.image-lightbox').remove();
   }
 });
