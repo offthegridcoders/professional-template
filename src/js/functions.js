@@ -56,14 +56,19 @@ $('.message-box .fa-times').click(function() {
 
 // Opens Modal
 $('.update-success').click(function() {
-  var html = '<div class="message-box"><div class="success-box"><i class="fa fa-check-circle"></i><span class="animated lightSpeedIn">Upload Success!</span></div></div><h1 class="center">Congradulations!</h1><p class="center">Thank you for uploading <a href="#">your file</a>.</p>'
-  $('body').append(buildModalMessage(html));
-  centerModalVertically($('.modal-message-container'));
+  if ($('.modal-message-container').length == 0) {
+    var html = '<div class="message-box"><div class="success-box"><i class="fa fa-check-circle"></i><span class="animated lightSpeedIn">Upload Success!</span></div></div><h1 class="center">Congradulations!</h1><p class="center">Thank you for uploading <a href="#">your file</a>.</p>'
+    $('body').append(buildModalMessage(html));
+    centerModalVertically($('.modal-message-container'));
+  }
+  return;
 });
 
 // Closes Modal
 $(document).on('click', '.modal-message-container', function(e) {
   if ($(e.target).hasClass('fa-times-circle')) {
-    $('.modal-message-container').remove();
+    $('.modal-message-container').removeClass('flipInX');
+    $('.modal-message-container').addClass('lightSpeedOut');
+    setTimeout(function() {$('.modal-message-container').remove();}, 1000);
   }
 });

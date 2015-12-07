@@ -1,6 +1,6 @@
 // LIGHTBOXES
 function buildModalMessage(copy) {
-  var div = $('<div/>').addClass('modal-message-container');
+  var div = $('<div/>').addClass('modal-message-container animated flipInX');
   var div2 = $('<div/>');
   var times = $('<i/>').addClass('fa fa-times-circle');
   var p = $('<p/>')
