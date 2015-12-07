@@ -1,0 +1,31 @@
+.default-table {
+  width: 100%;
+  text-align: left;
+
+  thead {
+    background-color: @main-color;
+    color: #fff;
+  }
+
+  td,
+  th {
+    padding: 5px;
+
+    &:last-child {
+      width: 80px;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: #eee;
+      }
+
+      &:hover {
+        background-color: lighten(@main-color, 40%);
+      }
+    }
+  }
+}

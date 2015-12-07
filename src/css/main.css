@@ -3796,6 +3796,29 @@ a {
 .form-default .btn-wrapper {
   margin-top: 20px;
 }
+.default-table {
+  width: 100%;
+  text-align: left;
+}
+.default-table thead {
+  background-color: #3da0e3;
+  color: #fff;
+}
+.default-table td,
+.default-table th {
+  padding: 5px;
+}
+.default-table td:last-child,
+.default-table th:last-child {
+  width: 80px;
+  text-align: center;
+}
+.default-table tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+.default-table tbody tr:hover {
+  background-color: #eff7fd;
+}
 * {
   box-sizing: border-box;
 }
