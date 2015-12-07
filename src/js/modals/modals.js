@@ -22,16 +22,3 @@ function centerModalVertically(modal) {
   var newLeft = (browserWidth - modalWidth) / 2;
   modal.css('left', newLeft);
 };
-
-// Opens Modal - Image LightBox
-$('.update-success').click(function() {
-  var html = '<div class="message-box"><div class="success-box"><i class="fa fa-check-circle"></i><span class="animated lightSpeedIn">Upload Success!</span></div></div>'
-  $('body').append(buildModalMessage(html));
-  centerModalVertically($('.modal-message-container'));
-});
-
-$(document).on('click', '.modal-message-container', function(e) {
-  if ($(e.target).hasClass('fa-times-circle')) {
-    $('.modal-message-container').remove();
-  }
-});

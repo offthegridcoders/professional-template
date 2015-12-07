@@ -6,7 +6,8 @@
   input[type="text"],
   input[type="password"],
   input[type="email"],
-  input[type="date"] {
+  input[type="date"],
+  textarea {
     height: @default-input-height;
     background-color: @defaultInputBGColor;
     border: solid 1px @default-input-border-color;
@@ -18,6 +19,24 @@
     &:focus {
       outline: none;
     }
+  }
+
+  .bg-switch {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  input[type="radio"] {
+    height: 20px;
+    margin: 3px 3px 3px 0;
+    vertical-align: middle;
+    font-size: 40px;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+    padding-top: 11px;
   }
 
   .placeholder-style {
@@ -87,7 +106,8 @@
       }
     }
 
-    input {
+    input,
+    textarea {
       position: relative;
       z-index: 1;
       margin: 5px 0;
@@ -107,7 +127,8 @@
       display: none;
     }
 
-    input {
+    input,
+    textarea {
       background-color: transparent;
       margin: 0;
     }
@@ -126,7 +147,8 @@
       display: block;
     }
 
-    input {
+    input,
+    textarea {
       background-color: @defaultInputBGColor;
       margin-bottom: 0;
     }
@@ -145,7 +167,8 @@
   }
 
   label.error {
-    input {
+    input,
+    textarea {
       border-color: @default-error-color;
     }
 

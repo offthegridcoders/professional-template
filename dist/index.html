@@ -24,6 +24,10 @@
         <link rel="stylesheet" href="css/compiled.css">
       <!-- SCRIPTS -->
         <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery-ui-button.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery-widget.js" type="text/javascript"></script>
+        <script src="js/vendor/carousel.js" type="text/javascript"></script>
         <script src="js/vendor/wow.min.js" type="text/javascript"></script>
         <script src="js/vendor/parallax.min.js" type="text/javascript"></script>
     </head>
@@ -273,6 +277,27 @@
                     <label class="half half-second"><span>End Date</span>
                       <input type="date">
                     </label>
+                  <!-- ANIMATED LABEL TEXTAREA - REQUIRED - ERROR -->
+                    <label class="animate-label lbl-empty"><span>Tell us about yourself<em>*</em></span>
+                      <i class="fa fa-times"></i>
+                      <textarea></textarea>
+                    </label>
+                  <!-- ANIMATED LABEL RADIO BUTTON - REQUIRED - ERROR -->
+                    <label>
+                      <input type="radio" name="exampleRadio" value="1">
+                      <span>Male</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="exampleRadio" value="2">
+                      <span>Female</span>
+                    </label>
+                    <label>
+                      <div class="bg-switch">
+                        <input id="terms" class="bg-toggle bg-yes-no" type="checkbox" required>
+                        <label for="terms" on="YES" off="NO"></label>
+                      </div>
+                      <span>I agree to the <a href="#">terms &amp; conditions</a></span>
+                    </label>
                   <!-- BUTTON WRAPPER -->
                     <div class="btn-wrapper">
                       <button class="btn-default">submit</button>
@@ -281,6 +306,11 @@
               <!-- ARTICLE FOOTER -->
                 <footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</footer>
             </article>
+          <!-- CAROUSEL MODULE -->
+            <article>
+              <header class="wow pulse">Styleable Carousel jQuery Plugin (with options)</header>
+            </article>
+            <header id="carousel"></header>
           <!-- MODAL MODULE -->
             <article class="simple-copy-article">
               <!-- ARTICLE HEADER -->
