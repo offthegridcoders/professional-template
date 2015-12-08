@@ -3914,27 +3914,6 @@ html {
   position: relative;
   font-weight: 400;
 }
-.main-nav .simple-search-container {
-  position: relative;
-}
-.main-nav .simple-search-container .fa-search {
-  position: absolute;
-  right: 12px;
-  top: 9px;
-  font-size: 21px;
-}
-.main-nav .simple-search-container input {
-  width: 200px;
-  background-color: transparent;
-  border: solid 2px;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 20px;
-  padding: 10px 34px 10px 10px;
-}
-.main-nav .simple-search-container input:focus {
-  outline: none;
-}
 .main-nav-first {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.38);
   padding: 10px 10px;
@@ -4508,11 +4487,6 @@ html {
 .blog-sidebar .main-item:hover {
   background-color: #e1e1e1;
 }
-.blog-sidebar .main-item .fa-plus,
-.blog-sidebar .main-item .fa-minus {
-  float: right;
-  margin-top: 3px;
-}
 .blog-sidebar .sub-item {
   padding: 15px 10px;
   margin: 5px;
@@ -4529,10 +4503,12 @@ html {
 .blog-sidebar .list-of-posts a {
   font-weight: 600;
 }
-.blog-sidebar .list-of-categories a {
+.blog-sidebar .list-of-categories a,
+.blog-sidebar .list-of-links a {
   font-weight: 600;
 }
-.blog-sidebar .list-of-categories li {
+.blog-sidebar .list-of-categories li,
+.blog-sidebar .list-of-links li {
   margin-bottom: 8px;
 }
 .blog-sidebar .active-item {
@@ -4541,9 +4517,6 @@ html {
 }
 .blog-sidebar .active-item:hover {
   background-color: #3da0e3;
-}
-.blog-sidebar .active-item .fa-plus {
-  display: none;
 }
 .blog-feed-item {
   background-color: #fff;
@@ -4676,6 +4649,27 @@ html {
 }
 .accordian .collapsed {
   display: none;
+}
+.simple-search-container {
+  position: relative;
+}
+.simple-search-container .fa-search {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  font-size: 21px;
+}
+.simple-search-container input {
+  width: 100%;
+  background-color: transparent;
+  border: solid 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px 34px 10px 10px;
+}
+.simple-search-container input:focus {
+  outline: none;
 }
 .blog-feed-wrapper {
   width: 100%;

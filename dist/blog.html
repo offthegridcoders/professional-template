@@ -43,13 +43,6 @@
             <li><a href="404.html">404</a></li>
             <li><a href="#" class="active">Blog</a></li>
             <li><a href="login.html">Login</a></li>
-            <li>
-              <!-- SIMPLE SEARCH CONTAINER MODULE -->
-              <form class="simple-search-container" onsubmit="javascript: console.log('Form Submitted'); return false;">
-                <input type="text" placeholder="Search...">
-                <i class="fa fa-search"></i>
-              </form>
-            </li>
           </ul>
         </nav>
       <!-- MAIN SECTION -->
@@ -58,7 +51,15 @@
         <section class="blog-feed-wrapper">
           <aside class="blog-sidebar">
             <ul class="accordian">
-              <li class="accordian-parent main-item">recent posts <i class="fa fa-plus"></i></li>
+              <li class="main-item">search</li>
+              <li class="animated fadeIn sub-item">
+                <!-- SIMPLE SEARCH CONTAINER MODULE -->
+                <form class="simple-search-container" onsubmit="javascript: console.log('Form Submitted'); return false;">
+                  <input type="text" placeholder="Search...">
+                  <i class="fa fa-search"></i>
+                </form>
+              </li>
+              <li class="accordian-parent main-item">recent posts</li>
               <li class="accordian-child collapsed animated fadeIn sub-item">
                 <ul class="list-of-posts">
                   <li><date>Dec 10th, 2015</date><a href="#">10 Reasons why I love this template</a></li>
@@ -68,7 +69,7 @@
                   <li><date>Dec 12th, 2015</date><a href="#">HTML5 &amp CSS3 are my favorite.</a></li>
                 </ul>
               </li>
-              <li class="accordian-parent main-item">by category <i class="fa fa-plus"></i></li>
+              <li class="accordian-parent main-item">by category</li>
               <li class="accordian-child collapsed animated fadeIn sub-item">
                 <ul class="list-of-categories">
                   <li><a href="#">Example Category 1</a></li>
@@ -81,9 +82,20 @@
                   <li><a href="#">Example Category 8</a></li>
                 </ul>
               </li>
-              <li class="accordian-parent main-item">search <i class="fa fa-plus"></i></li>
-              <li class="accordian-parent main-item">tag cloud <i class="fa fa-plus"></i></li>
-              <li class="accordian-parent main-item">links <i class="fa fa-plus"></i></li>
+              <li class="accordian-parent main-item">tag cloud</li>
+              <li class="accordian-parent main-item">links</li>
+              <li class="accordian-child collapsed animated fadeIn sub-item">
+                <ul class="list-of-links">
+                  <li><a href="#">Example Link 1</a></li>
+                  <li><a href="#">Example Link 2</a></li>
+                  <li><a href="#">Example Link 3</a></li>
+                  <li><a href="#">Example Link 4</a></li>
+                  <li><a href="#">Example Link 5</a></li>
+                  <li><a href="#">Example Link 6</a></li>
+                  <li><a href="#">Example Link 7</a></li>
+                  <li><a href="#">Example Link 8</a></li>
+                </ul>
+              </li>
             </ul>
           </aside>
           <article class="blog-feed-item">
