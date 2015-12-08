@@ -4530,6 +4530,7 @@ html {
 }
 .blog-feed-item header .title {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 .blog-feed-item header .author {
   color: #555;
@@ -4578,6 +4579,10 @@ html {
   float: left;
   margin: 11px 20px 0px 0;
 }
+.blog-feed-item .btn-wrapper {
+  text-align: right;
+  margin-top: 20px;
+}
 .blog-feed-item footer {
   margin-top: 10px;
   border-top: solid 1px #ccc;
@@ -4610,6 +4615,12 @@ html {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
+  background-image: url('../assets/headers/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.38);
 }
 .pagination {
   width: 400px;
@@ -4628,6 +4639,10 @@ html {
 .pagination .active {
   color: #777;
   text-decoration: underline;
+}
+.breadcrumbs {
+  padding: 10px 0;
+  margin-left: 30px;
 }
 .breadcrumbs li {
   display: inline-block;
@@ -4658,13 +4673,14 @@ html {
   right: 12px;
   top: 9px;
   font-size: 21px;
+  color: #efefef;
 }
 .simple-search-container input {
   width: 100%;
   background-color: transparent;
-  border: solid 2px;
+  border: solid 2px #efefef;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: none;
   border-radius: 20px;
   padding: 10px 34px 10px 10px;
 }
@@ -4673,7 +4689,7 @@ html {
 }
 .blog-feed-wrapper {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 10px;
   padding-bottom: 100px;
   position: relative;
 }
