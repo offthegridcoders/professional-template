@@ -5286,6 +5286,10 @@ html {
   margin-bottom: 10px;
 }
 
+.blog-feed-item .video {
+  margin: 20px auto;
+}
+
 .blog-feed-item .post {
   line-height: 1.8;
   position: relative;
@@ -5389,6 +5393,16 @@ html {
   margin-bottom: 10px;
 }
 
+.blog-feed-item footer .social-share {
+  float: right;
+}
+
+.blog-feed-item footer .social-share li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
 .blog-header {
   width: 100%;
   height: 400px;
@@ -5490,6 +5504,123 @@ html {
   outline: none;
 }
 
+.comments-wrapper {
+  background-color: #fff;
+  padding: 0 15px 0 15px;
+  margin: 0 20px 0 20px;
+  width: calc(70% - 100px);
+}
+
+.comments-wrapper .number-comments {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.comments-wrapper .number-comments span {
+  color: #3da0e3;
+}
+
+.comments-wrapper form {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.comments-wrapper form textarea {
+  padding: 10px;
+  outline: none;
+  border: solid 1px #ddd;
+  border-radius: 10px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+.comments-wrapper form button {
+  float: right;
+  position: relative;
+  top: -5px;
+  margin-top: 15px;
+}
+
+.comments-wrapper .comments-list {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.comments-wrapper .comments-list .comment {
+  border-bottom: solid 1px #eee;
+  padding: 25px 15px 15px 0;
+}
+
+.comments-wrapper .comments-list footer {
+  text-align: right;
+}
+
+.comments-wrapper .comments-list footer span {
+  color: #666;
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.comments-wrapper .comments-list footer .fa {
+  font-size: 20px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+.comments-wrapper .comments-list footer .fa-thumbs-o-up {
+  color: #49be49;
+}
+
+.comments-wrapper .comments-list footer .fa-thumbs-o-up:hover {
+  color: #3da0e3;
+}
+
+.comments-wrapper .comments-list footer .fa-thumbs-o-down {
+  color: #c9c9c9;
+}
+
+.comments-wrapper .comments-list footer .fa-thumbs-o-down:hover {
+  color: #f00;
+}
+
+.comments-wrapper .comments-list footer li {
+  display: inline-block;
+}
+
+.comments-wrapper .artist-information {
+  text-align: left;
+  width: 150px;
+  float: left;
+}
+
+.comments-wrapper .artist-information .user-photo {
+  display: block;
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  margin: 0 0 5px;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comments-wrapper .artist-information span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.comments-wrapper .btn-wrapper {
+  padding-top: 20px;
+  text-align: center;
+}
+
 .blog-feed-wrapper {
   width: 100%;
   padding-top: 10px;
@@ -5497,9 +5628,9 @@ html {
   position: relative;
 }
 
-.blog-feed-wrapper {
+.blog-post-wrapper {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 90px;
   padding-bottom: 100px;
   position: relative;
 }

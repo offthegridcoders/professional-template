@@ -46,20 +46,11 @@
           </ul>
         </nav>
       <!-- MAIN SECTION -->
-        <header class="blog-header"></header>
         <section class="blog-post-wrapper">
           <aside class="blog-sidebar">
             <ul class="accordian">
-            <li class="main-item">search</li>
-            <li class="animated fadeIn sub-item">
-              <!-- SIMPLE SEARCH CONTAINER MODULE -->
-              <form class="simple-search-container" onsubmit="javascript: console.log('Form Submitted'); return false;">
-                <input type="text" placeholder="Search...">
-                <i class="fa fa-search"></i>
-              </form>
-            </li>
-              <li class="accordian-parent main-item">recent posts</li>
-              <li class="accordian-child collapsed animated fadeIn sub-item">
+              <li class="main-item active-item">recent posts</li>
+              <li class="animated fadeIn sub-item">
                 <ul class="list-of-posts">
                   <li><date>Dec 10th, 2015</date><a href="blog-post.html">10 Reasons why I love this template</a></li>
                   <li><date>Dec 12th, 2015</date><a href="#">HTML5 &amp CSS3 are my favorite.</a></li>
@@ -68,8 +59,8 @@
                   <li><date>Dec 12th, 2015</date><a href="#">HTML5 &amp CSS3 are my favorite.</a></li>
                 </ul>
               </li>
-              <li class="accordian-parent main-item">by category</li>
-              <li class="accordian-child collapsed animated fadeIn sub-item">
+              <li class="main-item active-item">by category</li>
+              <li class="animated fadeIn sub-item">
                 <ul class="list-of-categories">
                   <li><a href="#">Example Category 1</a></li>
                   <li><a href="#">Example Category 2</a></li>
@@ -81,26 +72,14 @@
                   <li><a href="#">Example Category 8</a></li>
                 </ul>
               </li>
-              <li class="accordian-parent main-item">links</li>
-              <li class="accordian-child collapsed animated fadeIn sub-item">
-                <ul class="list-of-links">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
-                  <li><a href="#">Link 5</a></li>
-                  <li><a href="#">Link 6</a></li>
-                  <li><a href="#">Link 7</a></li>
-                  <li><a href="#">Link 8</a></li>
-                </ul>
-              </li>
             </ul>
           </aside>
           <article class="breadcrumbs">
             <ul>
               <li><a href="#">blog</a> <i class="fa fa-caret-right"></i></li>
               <li><a href="#">2015</a> <i class="fa fa-caret-right"></i></li>
-              <li>december</li>
+              <li><a href="#">december</a> <i class="fa fa-caret-right"></i></li>
+              <li>10 reasons why I love this template</li>
             </ul>
           </article>
           <article class="blog-feed-item">
@@ -110,9 +89,9 @@
             </header>
             <img class="full-image align-left" src="assets/headers/header.jpg">
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <span class="highlight">reprehenderit in voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <img class="sm-image align-right" src="assets/headers/header.jpg">
             <p class="post">Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h3>Lorem ipsum dolor sit</h3>
+            <iframe class="video" width="100%" height="400" src="https://www.youtube.com/embed/E5ln4uR4TwQ" frameborder="0" allowfullscreen></iframe>
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <strong>ut labore et dolore</strong> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <a href="#">nisi ut</a> aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="post"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p>
             <figure class="half-figure align-right">
@@ -123,7 +102,6 @@
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h2>Lorem ipsum dolor sit amet</h2>
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <img class="center-align" src="assets/headers/header.jpg">
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <strong>eiusmod tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <em>Ut enim ad minim</em> veniam, quis nostrud exercitation ullamco laboris nisi ut <a href="#">aliquip</a> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <figure class="full-figure">
@@ -135,6 +113,12 @@
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <a href="#">tempor incididunt ut</a> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="highlight">Duis aute irure</span> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <em>Ut enim ad minim veniam, quis nostrud exercitation</em> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <footer>
+              <ul class="social-share">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
               <ul class="tags">
                 <li>Catagories: </li>
                 <li><a href="#">Food</a></li>
@@ -143,6 +127,72 @@
               </ul>
             </footer>
           </article>
+          <aside class="comments-wrapper">
+            <header>
+              <span class="number-comments"><span>37</span> comments</span>
+            </header>
+            <form class="clearfix">
+              <textarea placeholder="Leave a comment"></textarea>
+              <button class="btn-default btn-round">leave a comment</button>
+            </form>
+            <ul class="comments-list">
+              <li class="comment">
+                <div class="artist-information">
+                  <div class="user-photo" style="background-image: url('../assets/headers/user-pic.jpg')"></div>
+                  <span>John Donald</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <footer>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-thumbs-o-down"></i></a><span>15</span></li>
+                    <li><a href="#"><i class="fa fa-thumbs-o-up"></i></a><span>23</span></li>
+                  </ul>
+                </footer>
+              </li>
+              <li class="comment">
+                <div class="artist-information">
+                  <div class="user-photo" style="background-image: url('../assets/headers/user-pic.jpg')"></div>
+                  <span>John Donald</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <footer>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-thumbs-o-down"></i></a><span>15</span></li>
+                    <li><a href="#"><i class="fa fa-thumbs-o-up"></i></a><span>23</span></li>
+                  </ul>
+                </footer>
+              </li>
+              <li class="comment">
+                <div class="artist-information">
+                  <div class="user-photo" style="background-image: url('../assets/headers/user-pic.jpg')"></div>
+                  <span>John Donald</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <footer>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-thumbs-o-down"></i></a><span>15</span></li>
+                    <li><a href="#"><i class="fa fa-thumbs-o-up"></i></a><span>23</span></li>
+                  </ul>
+                </footer>
+              </li>
+              <li class="comment">
+                <div class="artist-information">
+                  <div class="user-photo" style="background-image: url('../assets/headers/user-pic.jpg')"></div>
+                  <span>John Donald</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <footer>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-thumbs-o-down"></i></a><span>15</span></li>
+                    <li><a href="#"><i class="fa fa-thumbs-o-up"></i></a><span>23</span></li>
+                  </ul>
+                </footer>
+              </li>
+            </ul>
+            <div class="btn-wrapper">
+              <button class="btn-default-clear btn-round">view more comments</button>
+            </div>
+          </aside>
         </section>
       <!-- MAIN FOOTER -->
         <footer class="main-footer">
